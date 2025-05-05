@@ -1,0 +1,154 @@
+/* Center everything */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;  /* Background color added */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered heading */
+h1 {
+    color: #1f2937;
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+/* Search bar styling */
+form input[type="text"] {
+    padding: 10px;
+    width: 400px;  /* Increased the width */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Create Task Button positioning */
+a.create-btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b82f6; /* Blue for create button */
+    display: inline-block;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: left;  /* Align to left */
+    margin-left: 20px;  /* Margin to position to the left */
+}
+
+a.button, .button {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+a.edit-btn, .edit-btn {
+    background-color: #10b981; /* Green */
+}
+
+a.delete-btn, .delete-btn {
+    background-color: #ef4444; /* Red */
+}
+
+/* Hover effects for buttons */
+a.button:hover, .button:hover {
+    opacity: 0.8;
+}
+
+/* Center and style the table */
+table {
+    margin: 30px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3b82f6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* Container to center the delete box */
+.delete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d8b4b4;
+}
+
+.delete-box {
+    background-color: #fce1df;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.confirm-btn {
+    background-color: #ea6868;
+}
+
+.cancel-btn {
+    background-color: #5fd34b;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* Button hover effects */
+.confirm-btn:hover {
+    background-color: #ff0000;  /* Darker green on hover */
+}
+
+.cancel-btn:hover {
+    background-color: #76e83d;  /* Darker red on hover */
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 600px) {
+    .delete-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,47 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="{% static 'tasks\styles.css' %}">
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <a href="{% url 'task_create' %}" class="create-btn button">+ Create New Task</a>
+
+    <!-- Search bar -->
+    <form method="GET">
+        <input type="text" name="q" placeholder="Search tasks..." value="{{ request.GET.q }}">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task Name</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ forloop.counter }}</td>  <!-- Ensure correct field reference here -->
+                <td>{{ task.title}}</td>  <!-- Ensure task.name is correct in the model -->
+                <td>{{ task.description }}</td>
+                <td>{{ task.status }}</td>
+                <td>
+                    <a href="{% url 'task_update' task.id %}" class="edit-btn button">Edit</a>
+                    <a href="{% url 'task_delete' task.id %}" class="delete-btn button">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr><td colspan="5">No tasks found.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="delete-container">
+    <div class="delete-box">
+        <h2>Are you sure you want to delete <span class="task-title">"{{ task.title }}"</span>?</h2>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn confirm-btn">✅ Confirm Delete</button>
+        </form>
+        <a href="{% url 'task_list' %}" class="btn cancel-btn">❌ Cancel</a>
+    </div>
+</div>
+{% endblock %}
