@@ -132,24 +132,19 @@ A web frontend is easier to implement and deploy for MVPs. It allows easier acce
 git clone https://github.com/AshuGITHUBtosh/Internship_assingment.git
 cd taskmanager
 
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-
 # Run migrations
-python manage.py makemigrations
-python manage.py migrate
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```
 
 ### Run / Install Instructions
 
 ```bash
 # Create a superuser (optional but recommended)
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 
 # Run development server
-python manage.py runserver
+python3 manage.py runserver
 
 # Open in browser:
 # http://127.0.0.1:8000/
