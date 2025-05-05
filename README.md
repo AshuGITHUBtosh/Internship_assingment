@@ -103,21 +103,21 @@ Django's templating engine is powerful and integrates seamlessly with its ORM an
 
 ---
 
-## 2.1.3.4. Frontend Structure
+## Frontend Structure
 
-### 2.1.3.4.1. Frontend Type Used
+### Frontend Type Used
 
 **Web-based frontend** using **HTML + CSS** (via Django Templates).
 
-### 2.1.3.4.2. Justification
+### Justification
 
 A web frontend is easier to implement and deploy for MVPs. It allows easier access across platforms (desktop, mobile browsers) without the need for separate Android/iOS builds.
 
 ---
 
-## 2.1.3.5. Build and Install Instructions
+## Build and Install Instructions
 
-### 2.1.3.5.1. Environment & Dependencies
+### Environment & Dependencies
 
 #### 🔧 Requirements:
 - Python 3.10+
@@ -125,11 +125,11 @@ A web frontend is easier to implement and deploy for MVPs. It allows easier acce
 - SQLite (default)
 - `pip` for managing Python packages
 
-### 2.1.3.5.2. Build / Compile Instructions
+### Build / Compile Instructions
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/taskmanager.git
+git clone https://github.com/AshuGITHUBtosh/Internship_assingment.git
 cd taskmanager
 
 # Create virtual environment
