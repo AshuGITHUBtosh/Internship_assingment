@@ -1,15 +1,15 @@
 
 # 📝 Task Manager
 
-## 2.1.3.1. Overview
+## Overview
 
 The Task Manager is a web-based application built using Django. It allows users to create, update, delete, and view tasks. Each task includes a title, description, status, due date, remarks, and timestamps. The platform also supports user authentication to ensure that tasks are user-specific and secure.
 
 ---
 
-## 2.1.3.2. Database Design
+## Database Design
 
-### 2.1.3.2.1. ER Diagram
+### ER Diagram
 
 ```mermaid
 erDiagram
@@ -26,7 +26,7 @@ erDiagram
     }
 ```
 
-### 2.1.3.2.2. Data Dictionary
+### Data Dictionary
 
 | Field        | Type          | Description                        |
 |--------------|---------------|------------------------------------|
@@ -41,7 +41,7 @@ erDiagram
 | created_by   | ForeignKey(User) | Creator of the task             |
 | updated_by   | ForeignKey(User) | Last editor of the task         |
 
-### 2.1.3.2.3. Indexes Used
+### Indexes Used
 
 By default, Django creates indexes for:
 - Primary keys (`id`)
@@ -57,9 +57,9 @@ It allows us to manage models using Python code, easily migrate schema changes u
 
 ---
 
-## 2.1.3.3. Application Structure
+## Application Structure
 
-### 2.1.3.3.1. Project Folder Structure
+### Project Folder Structure
 
 ```
 taskmanager/
@@ -94,7 +94,7 @@ taskmanager/
 └── manage.py
 ```
 
-### 2.1.3.3.2. Rendering Strategy
+### Rendering Strategy
 
 **Standard MVC server-side rendering (MPA)** has been used.
 
@@ -136,15 +136,13 @@ cd taskmanager
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
 
 # Run migrations
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 2.1.3.5.3. Run / Install Instructions
+### Run / Install Instructions
 
 ```bash
 # Create a superuser (optional but recommended)
